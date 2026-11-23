@@ -1,0 +1,11 @@
+pymupdf
+sentence-transformers
+faiss-cpu
+transformers
+accelerate
+torch
+langgraph
+fpdf2
+matplotlib
+pandas
+numpy
