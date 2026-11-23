@@ -75,7 +75,9 @@ were handled, is at the top of the notebook.
 
 - The financial retrieval tool understands the two net sales tables. Questions
   about other statements (margins, expenses, cash flow) would need more table specs.
-- The number check stops invented figures, but it cannot tell whether a correct
-  number is described correctly (for example a growth rate called a "share").
-- A 1.5B model often ignores the planner rules; the guard keeps the agent on a
-  valid path and every override is logged.
+- The analysis check covers invented figures and the main statements (CAGR,
+  year-over-year, share, fastest/weakest/largest, "all regions grew"). Other
+  wording mistakes are still possible; the answer sentence above the analysis is
+  always built from the calculated values.
+- Qwen 1.5B follows the planner checklist in testing, but the rule guard stays in
+  place for any wrong choice, and every override is logged.
